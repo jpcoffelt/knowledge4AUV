@@ -3,24 +3,30 @@
 # Details
 
 Created by:
+```
     Jeremy Coffelt
     ESR11 in the REMARO MSCA Project
     ROSEN Research and Technology
     Bremen, Germany
+```
 
 Published:
+```
     github.com/jpcoffelt/knowlege4AUV
     2022-01-09
+```
 
 Filetype:
+```
     Written in OWL2 using Protégé and saved in RDF/XML syntax
+```
 
 ## Description
 
 This is minimal ontology for the ROSEN pipeline inspection case study within the REMARO MSCA Project. It currently has no dependencies on the University of Bremen Institute of Artificial Intelligence ontology stack (e.g., DUL, URDF, KnowRob, SOMA, SRDL).
 
 ## Metrics
-
+```
 159 Axoms
 102 Logical Axiom Count
 50  Declaration Axioms Count
@@ -29,9 +35,10 @@ This is minimal ontology for the ROSEN pipeline inspection case study within the
 14  Data Property Count
 8   Individual Count
 1   Annotation Property Count
+```
 
 ## Classes
-
+```
 owl:Thing
     | - Robot
     |     |- MobileRobot
@@ -56,9 +63,10 @@ owl:Thing
             | - PerceptionCapability
                     | - VisonPerceptionCapability
                     | - SonarPerceptionCapability                 
+```
 
 ## Object Properties
-
+```
 owl:topObjectProperty
     | - requiresPart
     | - requiresCapability
@@ -66,9 +74,10 @@ owl:topObjectProperty
     | - hasCapability
     | - hasPart
     | - isAttachedTo
+```
 
 ## Data Properties
-
+```
 owl:topDataProperty
     | - partProperty
     |       |- hasPose
@@ -83,9 +92,10 @@ owl:topDataProperty
             |- hasOrientation
             |- lastPositionUpdate
             |- hasBatteryCapacity
+```
 
 ## Individuals
-
+```
 owl:Thing
     | - Robot
     |     |- MobileRobot
@@ -109,3 +119,4 @@ owl:Thing
                     |       | - ObjectDetectionWithCamera
                     | - SonarPerceptionCapability  
                             | - PipelineSegmentationWithSonar
+```
