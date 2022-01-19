@@ -3,17 +3,23 @@
 # Details
 
 Created by:
+```
     Jeremy Coffelt
     ESR11 in the REMARO MSCA Project
     ROSEN Research and Technology
     Bremen, Germany
+```
 
 Published:
+```
     github.com/jpcoffelt/knowlege4AUV
     2022-01-09
+```
 
 Filetype:
+```
     Written in OWL2 using Protégé and saved in RDF/XML syntax
+```
 
 ## Description
 
@@ -21,6 +27,7 @@ This is minimal ontology for the ROSEN pipeline inspection case study within the
 
 ## Metrics
 
+```
 174 Axoms
 122 Logical Axiom Count
 45  Declaration Axioms Count
@@ -30,8 +37,11 @@ This is minimal ontology for the ROSEN pipeline inspection case study within the
 10  Individual Count
 1   Annotation Property Count
 
+```
+
 ## Classes
 
+```
 owl:Thing
     | - ManmadeThing
     |       |- Pipeline
@@ -48,16 +58,22 @@ owl:Thing
                     | - WaterColumn
                     | - WaterSurface
 
+```
+
 ## Object Properties
 
+```
 owl:topObjectProperty
     | - isLocatedOn
     | - isLocatedWithin
     | - contains
     | - supports
 
+```
+
 ## Data Properties
 
+```
 owl:topDataProperty
     | - locationProperty
     |       |- hasLatitude
@@ -77,8 +93,11 @@ owl:topDataProperty
     | - hasMaterial
     | - isSpecies
 
+```
+
 ## Individuals
 
+```
 owl:Thing
     | - ManmadeThing
     |       |- Site0_Torpedo
@@ -102,4 +121,5 @@ owl:Thing
                     | - WaterColumn
                     |       | - Site0_WaterColumn    
                     | - WaterSurface
-                            | - Site0_WaterSurface                  
+                            | - Site0_WaterSurface         
+```                                     

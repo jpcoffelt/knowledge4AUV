@@ -3,24 +3,30 @@
 # Details
 
 Created by:
+```
     Jeremy Coffelt
     ESR11 in the REMARO MSCA Project
     ROSEN Research and Technology
     Bremen, Germany
+```
 
 Published:
+```
     github.com/jpcoffelt/knowlege4AUV
     2022-01-09
+```
 
 Filetype:
+```
     Written in OWL2 using Protégé and saved in RDF/XML syntax
+```
 
 ## Description
 
 This is minimal ontology for the ROSEN pipeline inspection case study within the REMARO MSCA Project. It currently has no dependencies on the University of Bremen Institute of Artificial Intelligence ontology stack (e.g., DUL, URDF, KnowRob, SOMA, SRDL).
 
 ## Metrics
-
+```
 225 Axoms
 166 Logical Axiom Count
 44  Declaration Axioms Count
@@ -29,9 +35,10 @@ This is minimal ontology for the ROSEN pipeline inspection case study within the
 16  Data Property Count
 13  Individual Count
 1   Annotation Property Count
+```
 
 ## Classes
-
+```
 owl:Thing
     | - Pipeline
     | - PipeSegment
@@ -43,9 +50,10 @@ owl:Thing
     |       |- SafeObject
     |       |- DangerousObject
     | - Terrain
+```
 
 ## Object Properties
-
+```
 owl:topObjectProperty
     | - hasPart
     | - isPartOf
@@ -53,9 +61,10 @@ owl:topObjectProperty
     | - isAfter
     | - isNear
     | - touches
+```
 
 ## Data Properties
-
+```
 owl:topDataProperty
     | - pipeProperty
     |       |- hasLength
@@ -72,9 +81,10 @@ owl:topDataProperty
             |- hasShape
             |- hasSize
             |- hasColor
+```
 
 ## Individuals
-
+```
 owl:Thing
     | - Pipeline
     |       |- Site0_PipelineA
@@ -95,3 +105,4 @@ owl:Thing
     |               | - Site0_Torpedo   
     | - Terrain
             |- Site0_Terrain
+```
