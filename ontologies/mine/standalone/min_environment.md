@@ -1,6 +1,6 @@
-# minPipeline_noDependencies
+# min_environment
 
-# Details
+## Details
 
 Created by:
 ```
@@ -36,7 +36,6 @@ This is minimal ontology for the ROSEN pipeline inspection case study within the
 18  Data Property Count
 10  Individual Count
 1   Annotation Property Count
-
 ```
 
 ## Classes
@@ -57,7 +56,6 @@ owl:Thing
                     | - SeaFloor
                     | - WaterColumn
                     | - WaterSurface
-
 ```
 
 ## Object Properties
@@ -68,7 +66,6 @@ owl:topObjectProperty
     | - isLocatedWithin
     | - contains
     | - supports
-
 ```
 
 ## Data Properties
@@ -92,7 +89,6 @@ owl:topDataProperty
     |       |- isTurbid
     | - hasMaterial
     | - isSpecies
-
 ```
 
 ## Individuals

@@ -1,6 +1,6 @@
-# minUUV_noDependencies
+# min_uuv
 
-# Details
+## Details
 
 Created by:
 ```

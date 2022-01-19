@@ -1,6 +1,6 @@
-# minPipeline_noDependencies
+# min_pipeline
 
-# Details
+## Details
 
 Created by:
 ```
