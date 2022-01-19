@@ -35,4 +35,4 @@ This is minimal ontology for the ROSEN pipeline inspection case study within the
 
 ## Environment Ontology
 ![Environment Ontology](https://github.com/jpcoffelt/knowledge4AUV/blob/main/ontologies/mine/standalone/imgs/environment_ontology.png)
-![Environment Metrics](https://github.com/jpcoffelt/knowlegde4AUV/blob/main/ontologies/mine/standalone/imgs/environment_metrics.png)
+![Environment Metrics](https://github.com/jpcoffelt/knowledge4AUV/blob/main/ontologies/mine/standalone/imgs/environment_metrics.png)
