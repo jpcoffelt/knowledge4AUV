@@ -1,0 +1,646 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/jpcoffelt/knowledge4AUV/ontologies/new/minUUV_noDependencies.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/jpcoffelt/knowledge4AUV/ontologies/new/minUUV_noDependencies.owl">
+    <Prefix name="" IRI="https://github.com/jpcoffelt/knowledge4AUV/ontologies/new/minEnvironment_noDependencies.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AUV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcousticPerceptionCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcousticSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocomotionCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobileRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpticalSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerceptionCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerceptionSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlanningCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositionSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Propeller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ROV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rudder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tether"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnderwaterRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisionPerceptionCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#givesCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAttachedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresPart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBatteryCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDepth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMesh"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrientation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPose"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastPositionUpdate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#partProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#robotProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InertialNavigationSystem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ObjectDetectionWithCamera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ObstacleAvoidance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PipelineSegmentationWithSonar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SideScanSonar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TurbiditySensor"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AUV"/>
+        <Class IRI="#UnderwaterRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcousticPerceptionCapability"/>
+        <Class IRI="#PerceptionCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcousticSensor"/>
+        <Class IRI="#PerceptionSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actuator"/>
+        <Class IRI="#RobotPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glider"/>
+        <Class IRI="#UnderwaterRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LocomotionCapability"/>
+        <Class IRI="#RobotCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobileRobot"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpticalSensor"/>
+        <Class IRI="#PerceptionSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerceptionCapability"/>
+        <Class IRI="#RobotCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerceptionSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlanningCapability"/>
+        <Class IRI="#RobotCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositionSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propeller"/>
+        <Class IRI="#Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ROV"/>
+        <Class IRI="#UnderwaterRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robot"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotCapability"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotPart"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rudder"/>
+        <Class IRI="#Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#RobotPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tether"/>
+        <Class IRI="#RobotPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnderwaterRobot"/>
+        <Class IRI="#MobileRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisionPerceptionCapability"/>
+        <Class IRI="#PerceptionCapability"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AUV"/>
+        <Class IRI="#Glider"/>
+        <Class IRI="#ROV"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Actuator"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#OpticalSensor"/>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PositionSensor"/>
+        <NamedIndividual IRI="#InertialNavigationSystem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisionPerceptionCapability"/>
+        <NamedIndividual IRI="#ObjectDetectionWithCamera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LocomotionCapability"/>
+        <NamedIndividual IRI="#ObstacleAvoidance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcousticPerceptionCapability"/>
+        <NamedIndividual IRI="#PipelineSegmentationWithSonar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AUV"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcousticSensor"/>
+        <NamedIndividual IRI="#SideScanSonar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EnvironmentalSensor"/>
+        <NamedIndividual IRI="#TurbiditySensor"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#givesCapability"/>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+        <NamedIndividual IRI="#ObjectDetectionWithCamera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <NamedIndividual IRI="#InertialNavigationSystem"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresPart"/>
+        <NamedIndividual IRI="#ObjectDetectionWithCamera"/>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresPart"/>
+        <NamedIndividual IRI="#ObstacleAvoidance"/>
+        <NamedIndividual IRI="#InertialNavigationSystem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresPart"/>
+        <NamedIndividual IRI="#PipelineSegmentationWithSonar"/>
+        <NamedIndividual IRI="#SideScanSonar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <NamedIndividual IRI="#ObjectDetectionWithCamera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <NamedIndividual IRI="#ObstacleAvoidance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <NamedIndividual IRI="#PipelineSegmentationWithSonar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresCapability"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <NamedIndividual IRI="#ObjectDetectionWithCamera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresCapability"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <NamedIndividual IRI="#ObstacleAvoidance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresCapability"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <NamedIndividual IRI="#PipelineSegmentationWithSonar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#givesCapability"/>
+        <NamedIndividual IRI="#SideScanSonar"/>
+        <NamedIndividual IRI="#PipelineSegmentationWithSonar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <NamedIndividual IRI="#SideScanSonar"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <NamedIndividual IRI="#TurbiditySensor"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+        <Literal>black body with clear lens</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMass"/>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMesh"/>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+        <Literal>HD_cam.dae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPose"/>
+        <NamedIndividual IRI="#HighDefColorCamera"/>
+        <Literal>[1.5, 0, -0.5, 0, -45, 0, base_frame_link]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMass"/>
+        <NamedIndividual IRI="#InertialNavigationSystem"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMesh"/>
+        <NamedIndividual IRI="#InertialNavigationSystem"/>
+        <Literal>INS.dae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPose"/>
+        <NamedIndividual IRI="#InertialNavigationSystem"/>
+        <Literal>[0, 0, 0, 0, 0, 0, base_frame_link]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryCapacity"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <Literal>10 hours</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastPositionUpdate"/>
+        <NamedIndividual IRI="#REMARO_AUV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2022-01-19T13:20:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#SideScanSonar"/>
+        <Literal>matte black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMass"/>
+        <NamedIndividual IRI="#SideScanSonar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMesh"/>
+        <NamedIndividual IRI="#SideScanSonar"/>
+        <Literal>sss.dae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPose"/>
+        <NamedIndividual IRI="#SideScanSonar"/>
+        <Literal>[0, 0, -0.5, +/-30, 0, 0, base_frame_link]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMass"/>
+        <NamedIndividual IRI="#TurbiditySensor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.05</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#givesCapability"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCapability"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresCapability"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresPart"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#isAttachedTo"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCapability"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPart"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <Class IRI="#RobotPart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#givesCapability"/>
+        <Class IRI="#RobotCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCapability"/>
+        <Class IRI="#RobotCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPart"/>
+        <Class IRI="#RobotPart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <Class IRI="#Robot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresCapability"/>
+        <Class IRI="#RobotCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresPart"/>
+        <Class IRI="#RobotPart"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBatteryCapacity"/>
+        <DataProperty IRI="#robotProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasColor"/>
+        <DataProperty IRI="#partProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDepth"/>
+        <DataProperty IRI="#robotProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLatitude"/>
+        <DataProperty IRI="#robotProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLongitude"/>
+        <DataProperty IRI="#robotProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMass"/>
+        <DataProperty IRI="#partProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMaterial"/>
+        <DataProperty IRI="#partProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMesh"/>
+        <DataProperty IRI="#partProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOrientation"/>
+        <DataProperty IRI="#robotProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPose"/>
+        <DataProperty IRI="#partProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lastPositionUpdate"/>
+        <DataProperty IRI="#robotProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#partProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#robotProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasColor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDepth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLatitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLongitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMass"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMaterial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMesh"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastPositionUpdate"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasColor</IRI>
+        <Literal xml:lang="en">For now, given in plain English. (Later, perhaps as RGB values.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDepth</IRI>
+        <Literal xml:lang="en">in meters (down is positive, following ROS NED convention)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLatitude</IRI>
+        <Literal xml:lang="en">in decimal degrees (North is positive, following ROS NED convention)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLongitude</IRI>
+        <Literal xml:lang="en">in decimal degrees (East is positive, following ROS NED convention)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMass</IRI>
+        <Literal xml:lang="en">in kilograms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMesh</IRI>
+        <Literal xml:lang="en">Given by name of an associated mesh file.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPose</IRI>
+        <Literal xml:lang="en">Eventually, this will be in the form of a ROS tf message/structure, complete with parent/child frames.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

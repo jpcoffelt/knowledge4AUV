@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/jpcoffelt/knowledge4AUV/ontologies/new/minEnvironment_noDependencies.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/jpcoffelt/knowledge4AUV/ontologies/new/minEnvironment_noDependencies.owl">
+    <Prefix name="" IRI="https://github.com/jpcoffelt/knowledge4AUV/ontologies/new/minEnvironment_noDependencies.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garbage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LivingThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManmadeThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonLivingThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pipeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeaFloor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnderwaterVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterColumn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterSurface"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedWithin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supports"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#appearanceProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDepth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasShape"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isChoppy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isNotRecyclable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRecyclable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSpecies"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isStill"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isTurbid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastPositionUpdate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locationProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#qualityProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_AUV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_DiscardedFishingNet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_Pipeline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_SeaWeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_WaterColumn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Site0_WaterSurface"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#LivingThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garbage"/>
+        <Class IRI="#ManmadeThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LivingThing"/>
+        <Class IRI="#NaturalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManmadeThing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalThing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonLivingThing"/>
+        <Class IRI="#NaturalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pipeline"/>
+        <Class IRI="#ManmadeThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeaFloor"/>
+        <Class IRI="#NonLivingThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceVehicle"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnderwaterVehicle"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetation"/>
+        <Class IRI="#LivingThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#ManmadeThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterColumn"/>
+        <Class IRI="#NonLivingThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterSurface"/>
+        <Class IRI="#NonLivingThing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Vegetation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Garbage"/>
+        <Class IRI="#Pipeline"/>
+        <Class IRI="#Vehicle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LivingThing"/>
+        <Class IRI="#NonLivingThing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ManmadeThing"/>
+        <Class IRI="#NaturalThing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SeaFloor"/>
+        <Class IRI="#WaterColumn"/>
+        <Class IRI="#WaterSurface"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SurfaceVehicle"/>
+        <Class IRI="#UnderwaterVehicle"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#UnderwaterVehicle"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Garbage"/>
+        <NamedIndividual IRI="#Site0_DiscardedFishingNet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pipeline"/>
+        <NamedIndividual IRI="#Site0_Pipeline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Garbage"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeaFloor"/>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetation"/>
+        <NamedIndividual IRI="#Site0_SeaWeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurfaceVehicle"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManmadeThing"/>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterColumn"/>
+        <NamedIndividual IRI="#Site0_WaterColumn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterSurface"/>
+        <NamedIndividual IRI="#Site0_WaterSurface"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedWithin"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+        <NamedIndividual IRI="#Site0_WaterColumn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <NamedIndividual IRI="#Site0_DiscardedFishingNet"/>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <NamedIndividual IRI="#Site0_Pipeline"/>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <NamedIndividual IRI="#Site0_WaterSurface"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <NamedIndividual IRI="#Site0_SeaWeed"/>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+        <NamedIndividual IRI="#Site0_WaterSurface"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+        <Literal>white with blue accents</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">54.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShape"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+        <Literal>Mesh given by site0_AUV.dae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+        <Literal>0.5 meter diameter and 3 meters long</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastPositionUpdate"/>
+        <NamedIndividual IRI="#Site0_AUV"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2022-01-19T13:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#Site0_DiscardedFishingNet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Site0_DiscardedFishingNet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">54.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Site0_DiscardedFishingNet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#Site0_DiscardedFishingNet"/>
+        <Literal>nylon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRecyclable"/>
+        <NamedIndividual IRI="#Site0_DiscardedFishingNet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#Site0_Pipeline"/>
+        <Literal>yellow</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#Site0_Pipeline"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#Site0_Pipeline"/>
+        <Literal>insulated steel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#Site0_Pipeline"/>
+        <Literal>36-inch diameter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <Literal>clear</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">54.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <Literal>plastic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShape"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <Literal>Mesh given by site0_plastic_bottle.dae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <Literal>1 Liter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRecyclable"/>
+        <NamedIndividual IRI="#Site0_PlasticBottle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaterial"/>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+        <Literal>sandy with gravel and scattered boulders</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShape"/>
+        <NamedIndividual IRI="#Site0_SeaFloor"/>
+        <Literal>Mesh given by site0_seafloor.dae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isSpecies"/>
+        <NamedIndividual IRI="#Site0_SeaWeed"/>
+        <Literal>Saccharina latissima</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+        <Literal>red and white</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">53.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShape"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+        <Literal>Mesh given by site0_support_vessel.dae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+        <Literal>20 meter length</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastPositionUpdate"/>
+        <NamedIndividual IRI="#Site0_SupportVessel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2022-01-19T13:15:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColor"/>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+        <Literal>green with light stripes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">55.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasShape"/>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+        <Literal>Mesh given by site0_torpedo.dae</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSize"/>
+        <NamedIndividual IRI="#Site0_Torpedo"/>
+        <Literal>2 meters in length</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isStill"/>
+        <NamedIndividual IRI="#Site0_WaterColumn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isTurbid"/>
+        <NamedIndividual IRI="#Site0_WaterColumn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isChoppy"/>
+        <NamedIndividual IRI="#Site0_WaterSurface"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLocatedWithin"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#supports"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#isLocatedWithin"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <ObjectProperty IRI="#supports"/>
+    </InverseObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#supports"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#isLocatedOn"/>
+        <ObjectProperty IRI="#isLocatedWithin"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#appearanceProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasColor"/>
+        <DataProperty IRI="#appearanceProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDepth"/>
+        <DataProperty IRI="#locationProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLatitude"/>
+        <DataProperty IRI="#locationProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLongitude"/>
+        <DataProperty IRI="#locationProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMaterial"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasShape"/>
+        <DataProperty IRI="#appearanceProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSize"/>
+        <DataProperty IRI="#appearanceProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isChoppy"/>
+        <DataProperty IRI="#qualityProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isNotRecyclable"/>
+        <DataProperty IRI="#qualityProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isRecyclable"/>
+        <DataProperty IRI="#qualityProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isSpecies"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isStill"/>
+        <DataProperty IRI="#qualityProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isTurbid"/>
+        <DataProperty IRI="#qualityProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lastPositionUpdate"/>
+        <DataProperty IRI="#locationProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#locationProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#qualityProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasColor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDepth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLatitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLongitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMaterial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasShape"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSize"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isChoppy"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isNotRecyclable"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRecyclable"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isSpecies"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isStill"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isTurbid"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastPositionUpdate"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#isChoppy"/>
+        <DataProperty IRI="#isStill"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#isNotRecyclable"/>
+        <DataProperty IRI="#isRecyclable"/>
+    </DisjointDataProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Site0_AUV</IRI>
+        <Literal xml:lang="en">UUVs will be described in detail using a UUV-specific ontology/OWL file.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Site0_Pipeline</IRI>
+        <Literal xml:lang="en">Pipelines will be described in detail using a pipeline-specific ontology/OWL file.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasColor</IRI>
+        <Literal xml:lang="en">For now, given in plain English. (Later, perhaps as RGB values.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDepth</IRI>
+        <Literal xml:lang="en">in meters (down is positive, following ROS NED convention)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLatitude</IRI>
+        <Literal xml:lang="en">in decimal degrees (North is positive, following ROS NED convention)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLongitude</IRI>
+        <Literal xml:lang="en">in decimal degrees (East is positive, following ROS NED convention)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasShape</IRI>
+        <Literal xml:lang="en">Given by either plain-english description or the name of an associated mesh or pointcloud file.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
