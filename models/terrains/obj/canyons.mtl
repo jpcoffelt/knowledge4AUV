@@ -1,0 +1,12 @@
+# Blender MTL File: 'canyons.blend'
+# Material Count: 1
+
+newmtl canyons
+Ns 9.000004
+Ka 1.000000 1.000000 1.000000
+Kd 0.094626 0.062087 0.040509
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
