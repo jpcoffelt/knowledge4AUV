@@ -1,0 +1,252 @@
+<?xml version='1.0'?>
+
+<sdf version="1.4">
+  <model name="auv">
+    <pose>0 0 0 0 0 0</pose>
+    <static>true</static>
+
+    <link name="base">
+      <visual name="visual">
+        <geometry>
+            <mesh><uri>model://auv/meshes/base.dae</uri></mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <pose>0 0 0 0 1.5708 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.375</radius>
+            <length>3.000</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <inertial>    <!-- todo -->
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>1</ixy>
+          <ixz>1</ixz>
+          <iyy>1</iyy>
+          <iyz>1</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+    </link>
+
+    <link name="prop">
+      <visual name="visual">
+        <pose>-1.440 0 0 0 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/prop.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="revolute" name="joint_prop">
+      <pose>-1.440 0 0 0 0 1.5708</pose>
+      <child>prop</child>
+      <parent>base</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+      </axis>
+    </joint>
+
+    <link name="fins_vertical">
+      <visual name="visual">
+        <pose>-1.200 0 0 0 0 3.14159</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/fin_pair.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="revolute" name="joint_fins_vertical">
+      <pose>-1.200 0 0 0 0 0</pose>
+      <child>fins_vertical</child>
+      <parent>base</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+      <limit>
+        <lower>-0.1</lower>
+        <upper>0.1</upper>
+      </limit>      
+    </joint>
+
+    <link name="fins_horizontal">
+      <visual name="visual">
+        <pose>-1.200 0 0 1.5708 0 3.14159</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/fin_pair.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="revolute" name="joint_fins_horizontal">
+      <pose>-1.200 0 0 0 0 0</pose>
+      <child>fins_horizontal</child>
+      <parent>base</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+      <limit>
+        <lower>-0.1</lower>
+        <upper>0.1</upper>
+      </limit> 
+    </joint>
+
+    <link name="cam_front">
+      <visual name="visual">
+        <pose>1.45 0 0 0 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/cam.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_cam_front">
+      <child>cam_front</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="cam_bottom">
+      <visual name="visual">
+        <pose>1.15 0 -0.25 0 1.5708 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/cam.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_cam_bottom">
+      <child>cam_bottom</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="lights_front">
+      <visual name="visual">
+        <pose>1.45 0 0 0 0 3.14159</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/light_pair.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_lights_front">
+      <child>lights_front</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="lights_bottom">
+      <visual name="visual">
+        <pose>1.15 0 -0.25 0 -1.5708 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/light_pair.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_lights_bottom">
+      <child>lights_bottom</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="scanner_top">
+      <visual name="visual">
+        <pose>0 0 0.25 0 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/scanner.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_scanner_top">
+      <child>scanner_top</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="scanner_side">
+      <visual name="visual">
+        <pose>0 -0.25 0 1.5708 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/scanner.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_scanner_side">
+      <child>scanner_side</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="sss_starboard">
+      <visual name="visual">
+        <pose>0 -0.1767767 -0.1767767 -0.7854 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/sss.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_sss_starboard">
+      <child>sss_starboard</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="sss_port">
+      <visual name="visual">
+        <pose>0 0.1767767 -0.1767767 0.7854 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/sss.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_sss_port">
+      <child>sss_port</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="fls">
+      <visual name="visual">
+        <pose>1.4267767 0 -0.1767767 0 3.927 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/fls.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_fls">
+      <child>fls</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="mbes">
+      <visual name="visual">
+        <pose>0 0 -0.25 0 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/mbes.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_mbes">
+      <child>mbes</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="dvl">
+      <visual name="visual">
+        <pose>-0.45 0 -0.25 0 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/dvl.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_dvl">
+      <child>dvl</child>
+      <parent>base</parent>
+    </joint>
+
+    <link name="laser">
+      <visual name="visual">
+        <pose>-0.9 0 -0.25 0 0 0</pose>
+        <geometry>
+            <mesh><uri>model://auv/meshes/laser.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="fixed" name="joint_laser">
+      <child>laser</child>
+      <parent>base</parent>
+    </joint>
+
+  </model>
+</sdf>
